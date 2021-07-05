@@ -6,3 +6,4 @@ Gemfile.lock
 
 # Binary
 covers/*
+!covers/.gitkeep
