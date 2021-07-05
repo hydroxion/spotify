@@ -1,0 +1,8 @@
+# Editor
+.vscode
+
+# GEM
+Gemfile.lock
+
+# Binary
+covers/*
