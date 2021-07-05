@@ -15,23 +15,17 @@ def search
 	gets.chomp.capitalize
 end
 
-def urls(album)
-	uris = Hash[]
-
-	album.each do |item|
-		uris.store(item.name, item.images[0]["url"]);
+def urls(albums)
+	albums.to_h do |album|
+	  [album.name, album.images.first["url"]]
 	end
-
-	uris
-end
-
+  end
+  
 def download(urls)
 	urls.each do |name, url|
-		open(url.to_s) { |f|
-			File.open("./covers/#{name}.jpeg","wb") do |file|
-				file.puts f.read
-			end
-		}
+		file = URI.open(url)
+
+		File.write("./covers/#{name}.jpeg", file.read)
 	end
 end
 
