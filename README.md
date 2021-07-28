@@ -9,6 +9,7 @@ The main goal is to download all album covers from artists and bands in high fro
 ## Built with
 
 - [Ruby](https://www.ruby-lang.org/en/)
+- [Ruby Spotify](https://github.com/guilhermesad/rspotify)
 
 ## Installation
 
