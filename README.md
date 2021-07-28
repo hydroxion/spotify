@@ -1,6 +1,6 @@
 # Spotify
 
-Download album covers.
+Download album covers from Spotify.
 
 ## About
 
@@ -32,13 +32,15 @@ bundle install
 
 ## Usage
 
-Create an application in [Spotify Developer](https://developer.spotify.com/dashboard), get the client ID and client secret and replace by `client_id` and `client_secret` at the beginning of _spotify.rb_.
+Create an application in [Spotify Developer](https://developer.spotify.com/dashboard), get the client ID and client secret and replace `client_id` and `client_secret` at the beginning of _spotify.rb_.
 
 Run the CLI.
 
 ```sh
 ruby spotify.rb
 ```
+
+The covers are available in *covers*.
 
 ## Contributing
 
